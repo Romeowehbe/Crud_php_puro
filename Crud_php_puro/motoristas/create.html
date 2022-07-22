@@ -1,0 +1,22 @@
+<?php include_once("../crud/index.php"); ?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cadastro de Motoristas</title>
+  </head>
+  <body>
+	<h1>Cadastre seu motorista</h1>
+      <form action="../crud/index.php?create=true" method="POST">
+	  Nome:<br/> 
+	  <input type="text" name="nome" placeholder="Qual seu nome?"><br/><br/>
+	  CPF:<br/> 
+	  <input type="text" name="CPF" placeholder="Insira seu CPF"><br/><br/>
+	  CNH:<br/> 
+	  <input type="text" name="CNH" placeholder="Insira sua CNH"><br/><br/>
+	  <br/><br/>
+	  <input type="hidden" value="-1" name="id" >
+	  <button type="submit">Cadastrar</button>
+	</form>
+  </body>
+</html>
